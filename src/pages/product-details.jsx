@@ -20,6 +20,10 @@ const products = () => {
         <div>Price: {data.price} USD</div>
         <div className="product--prodComp__description"> Product description: {data.description}</div>
         <div>Category: {data.category}</div>
+        <div>
+          {data.rating === undefined ? <div> </div> : <div>Rating: {data.rating.rate}</div>}
+          {data.rating === undefined ? <div> </div> : <div>From: {data.rating.count} votes</div>}
+        </div>
         <div> <img className="product--prodComp__img" src={data.image} alt="" /></div>
       </section>
     </div>
