@@ -1,0 +1,31 @@
+.timer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.timer__button{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgb(23, 194, 228);
+  border: 5px solid rgb(23, 194, 228);
+  border-radius: 10px;
+  height: fit-content;
+  text-decoration: none;
+  font-size: 24px;
+}
+.timer__timercount{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: white;
+  background-color: grey;
+  border: 5px solid grey ;
+  border-radius: 10px;
+  height: fit-content;
+  text-decoration: none;
+}

@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# Assesment-Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+El objetivo de esta misión es poner en práctica lo que has aprendido en el programa. Los temas que se cubrirán son: Scrum, Git, HTML y CSS, JavaScript y React.
 
-In the project directory, you can run:
+La misión consta de dos partes: primero deberás construir un proyecto en React y después deberás responder una serie de preguntas. En el reporte de la misión deberás agregar el link al repositorio del proyecto y las respuestas a las preguntas.
+<h1></h1>
 
-### `npm start`
+<h1>Respuestas a las preguntas</h1>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h1>¿Cuáles son las ceremonias más importantes de un Sprint y cuál es la idea de cada una?</h1>
+Sprint planing.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- El Sprint Planning al comienzo del Sprint: define lo que se debe realizar en el sprint.
+- Daily Scrums a diario: para ver como va el proyecto a diario.
+- Un Sprint Review al final del Sprint para inspeccionar el incremento realizado de ese periodo.
+- Retrospectiva para inspeccionar el equipo y levantar mejoras que se apliquen en el siguiente Sprint.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h1>¿Qué son los Wireframes? Nombra al menos una herramienta que podamos utilizar.</h1>
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- es una estructura visual que representa el esqueleto de una pagina web o aplicación, es algo así como un esquema.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<h1>Explicar la diferencia entre var, let y const. Y dar un ejemplo en qué caso se utilizará.</h1>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- var: variable que no tiene una limitación scope, toma todo el codigo global uncluso afectando el codigo fuera de la función o cualquier alcance global.
 
-### `npm run eject`
+- let: variable con limitación scope, solo afecta lo que esté dentro de la función o la limitación del scope.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- const: son constantes, por lo cual modificar su valor es mucho mas limitado y no se modifican con la misma facilidad de las variables, el identificador de la variable no puede ser reasignado.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<h1>Explicar la diferencia entre git merge y git rebase.</h1>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- El merge es una opción "segura" en el sentido que no borra el historial de commits y crea un nuevo commit, el rebase borra el historial de commits e incluso no es necesario un nuevo commit para realizarlo.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<h1>¿Cuál es la diferencia entre Pull Request (PR) y el comando git pull?</h1>
 
-## Learn More
+- Git pull permite extraer o descargar un repositorio remoto, al contrario el pull request lo que intenta es fusionar o hacer merge entre dos ramas del proyecto en git.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Una Pull Request es la acción de git de validar un código con el fin de realizar merge de una rama a otra.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<h1>¿Qué es el Virtual DOM?</h1>
 
-### Code Splitting
+- Es una versión documental de una apicación web donde se actualiza cada vez que es necesario en relación a los eventos o estados de la aplicación
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<h1>Dado el siguiente codePen, el cual solo tiene un HTML, por medio de css llegar a esta respuesta.</h1>
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<h1>Respuesta: Codigo</h1>
 
-### Making a Progressive Web App
+body{
+  display:flex;
+  justify-content:center;
+}
+.c-section{
+    background-color: rgb(255, 255, 255);
+    max-width: 800px;
+    height: 600px;
+}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+.c-section__title{
+    background-color: grey;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+}
 
-### Advanced Configuration
+.c-services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+.c-services__item{
+    background-color: rgb(230, 230, 230);
+    width: 350px;
+    height: 150px;
+    list-style:none;
 
-### Deployment
+}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+.c-services__item:hover{
+    box-shadow: 10px 10px 10px -10px;
+    
+}
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+h3{
+    text-align: center;
+}
